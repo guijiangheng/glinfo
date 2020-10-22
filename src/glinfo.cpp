@@ -10,7 +10,7 @@ namespace glinfo {
         glfwDefaultWindowHints();
         glfwWindowHint(GLFW_VISIBLE, false);
 
-        auto window = glfwCreateWindow(640, 480, "GLFW CMake starter", NULL, NULL);
+        auto window = glfwCreateWindow(640, 480, "glinfo", NULL, NULL);
         if (!window) {
             glfwTerminate();
             return "Error: glfw create window failed!";
@@ -39,7 +39,7 @@ namespace glinfo {
 
         glfwDefaultWindowHints();
 
-        auto window = glfwCreateWindow(640, 480, "GLFW CMake starter", NULL, NULL);
+        auto window = glfwCreateWindow(640, 480, "glinfo", NULL, NULL);
         if (!window) {
             glfwTerminate();
             return "Error: glfw create window failed!";

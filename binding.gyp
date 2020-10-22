@@ -27,7 +27,7 @@
                     {
                         "libraries": [
                             "-Wl,-rpath=\'$${ORIGIN}/../../../libs/linux'",
-                            "<(glfw)/linux/libglfw.so.3"
+                            "<(libs)/linux/libglfw.so.3"
                         ]
                     }
                 ],
@@ -35,7 +35,7 @@
                     "OS=='win' and target_arch=='x32'",
                     {
                         "libraries": [
-                            "<(glfw)/win32/glfw3dll.lib",
+                            "<(libs)/win32/glfw3dll.lib",
                             "opengl32.lib"
                         ]
                     }
@@ -54,7 +54,7 @@
                     {
                         "xcode_settings": {
                             "OTHER_LDFLAGS": [
-                                "<(glfw)/darwin/libglfw.3.dylib",
+                                "<(libs)/darwin/libglfw.3.dylib",
                                 "-Wl,-rpath -Wl,@loader_path/../../../libs/darwin"
                             ]
                         }

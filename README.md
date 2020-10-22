@@ -4,23 +4,32 @@ glinfo是gflw的c++ nodejs addon。
 
 # build
 
-项目依赖glfw，首先需要编译glfw。编译的话需要安装编译工具，Windows下面需要安装CMake，Visual Studio，Mac下需要安装CMake，XCode，Linux下面需要安装gcc，CMake。把编译得到的glfw静态库放到对应的目录下。
+项目依赖glfw，首先需要编译glfw。编译的话需要安装编译工具:
 
-编译完glfw后需，输入命令
+> Windows下面需要安装CMake，Visual Studio\
+> Mac下需要安装CMake，XCode\
+> Linux下面需要安装gcc，CMake\
+
+把编译得到的glfw静态库放到对应的目录下。
+
+编译完glfw后需，输入以下命令编译glinfo.node扩展：
 ```bash
+# 或者node-gyp rebuild
 node-gyp configure
 node-gyp build
-# 或者node-gyp rebuild
 ```
-进行编译。同样的，不同的操作系统需要安装编译工具。
+同样的，不同的操作系统需要安装相应的编译工具。
 
 # example
 
-进入example目录，输入
+进入example目录，输入以下命令：
 ```bash
 npm ci
 node ./info.js
 ```
-即可。因为依赖包含了binding.gyp，node会自动触发编译，如果之前没有编译过，需要安装编译工具进行编译。
+因为依赖包含了binding.gyp，node会自动触发编译，如果之前没有编译过，需要安装编译工具进行编译。
 
-# 参考链接
+## 参考链接
+
+1. [https://medium.com/jspoint/a-simple-guide-to-load-c-c-code-into-node-js-javascript-applications-3fcccf54fd32](https://medium.com/jspoint/a-simple-guide-to-load-c-c-code-into-node-js-javascript-applications-3fcccf54fd32)
+2. [https://nodeaddons.com/cross-platform-addons-with-node-pre-gyp/](https://nodeaddons.com/cross-platform-addons-with-node-pre-gyp/)
