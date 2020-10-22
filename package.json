@@ -1,0 +1,30 @@
+{
+  "name": "gl-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "node-addon-api": "^3.0.2",
+    "bindings": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guijiangheng/glinfo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/guijiangheng/glinfo/issues"
+  },
+  "homepage": "https://github.com/guijiangheng/glinfo#readme"
+}
