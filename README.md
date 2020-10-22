@@ -8,11 +8,11 @@ glinfo是gflw的c++ nodejs addon。
 
 > Windows下面需要安装CMake，Visual Studio\
 > Mac下需要安装CMake，XCode\
-> Linux下面需要安装gcc，CMake\
+> Linux下面需要安装gcc，CMake
 
-把编译得到的glfw静态库放到对应的目录下。
+把编译得到的glfw静态库根据系统和架构放到libs对应的目录下。
 
-编译完glfw后需，输入以下命令编译glinfo.node扩展：
+编译完glfw后，输入以下命令编译glinfo.node扩展：
 ```bash
 # 或者node-gyp rebuild
 node-gyp configure
@@ -27,7 +27,7 @@ node-gyp build
 npm ci
 node ./info.js
 ```
-因为依赖包含了binding.gyp，node会自动触发编译，如果之前没有编译过，需要安装编译工具进行编译。
+因为依赖的包模块目录下有binding.gyp文件，npm install的时候会自动触发编译。
 
 ## 参考链接
 
